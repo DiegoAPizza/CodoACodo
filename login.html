@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="multimedia\branding\logo_light_horizontal.svg" class="logo" alt="">
+            <h2 class="nombre_empresa">Funkoshop</h2>
+        </div>
+        <nav>
+            <a class="nav-link" href="salir.html">Salir</a>
+        </nav>
+    </header>
+        <div class="container">
+            <form action="login.php" class="forms" method="post">
+                <label>Username:</label>
+                <input type="text" class="input_email"  name="username" placeholder="Username">
+                
+                <label>Password:</label>
+                <input type="password"  class="input_password" name="password" placeholder="Password">
+                
+                <button class="btn_ingresar" type="submit">Ingresar</button>
+                <input type="checkbox" name="record" class="input_record" id="record_usuario">Recordarme
+                <a class="contraseña" href="olvidecontra.html">Olvide mi contraseña</a>
+            </form>
+        </div>
+        <footer class="container_footer">
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="register.html">Registrarse</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <img src="" alt="">
+            <p>All Rigt reserved 2023- Funkoshop&copy:</p>
+        </footer>
+</body>
+</html>

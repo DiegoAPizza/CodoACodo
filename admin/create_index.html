@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../multimedia\branding\logo_light_horizontal.svg" class="logo" alt="">
+            <h2 class="nombre_empresa">Funkoshop</h2>
+        </div>
+        <nav>
+            <a href="salir.html" class="nav-link">Salir</a>
+        </nav>
+    </header>
+    <form action="/crear" method="post">
+        <h1>Crear Nuevo Item</h1>
+        <label for="text" class="selection">Categoria</label>
+        <select class="form-select" aria-label="Default select example">
+            <option value="">Seleccionar</option>
+            <option value="1">Estudios</option>
+            <option value="2">Cine</option>
+            <option value="3">Musica</option>
+        </select>
+        <label for="text" class="selection">Licencia</label>
+        <select class="form-select" aria-label="Default select example">
+            <option value="">Seleccionar</option>
+            <option value="1">Estudios</option>
+            <option value="2">Cine</option>
+            <option value="3">Musica</option>
+        </select>
+        <label for="text">Nombre del Producto</label>
+        <input type="text" class="form-input" id="text" name="text" placeholder="Nombre del Producto" required>
+        <textarea name="descript_product" id="" cols="30" rows="10" placeholder="Descripcion del producto"></textarea>
+        <label for="text">SKU:</label>
+        <input type="text" class="input_text" name="sku" id="serie_product" placeholder="SSK111AB001" required>
+        <label for="text">Precio:</label>
+        <input type="text" class="input_text" name="precio" id="precio_product" placeholder="$0.000,00" required>
+        <label for="text">Stock:</label>
+        <input type="text" class="input_text" name="stock" id="stock_product" placeholder="0" required>
+        <label for="text">Descuento:</label>
+        <input type="text" class="input_text" name="descuento" id="descuento_product" placeholder="0%" required>
+        <label for="text">Cuotas: </label>
+        <select class="form-select" aria-label="Default select example">
+            <option value="">3 Cuotas sin Interes</option>
+            <option value="1">Estudios</option>
+            <option value="2">Cine</option>
+            <option value="3">Musica</option>
+        </select>
+        <label for="text">Imagenes</label>
+        <input type="file" class="form-input" id="imagen_product" name="imagen_product" required>
+        <button type="submit" class="btn_subir">Agregar Producto</button>
+        <button type="reset" class="btn_subir">Limpiar</button>
+
+    </form>
+    <footer class="container_footer">
+        <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="register.html">Registrarse</a></li>
+            <li><a href="login.html">Ingresar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <img src="" alt="">
+        <p>All Rigt reserved 2023- Funkoshop&copy:</p>
+    </footer>
+</body>
+</html>
