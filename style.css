@@ -1,0 +1,138 @@
+/* 
+Header
+*/
+.header {
+    background-color: rgba(48, 52, 63, 1);
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+nav a {
+    font-weight: 500px;
+    padding-right: 20px;
+}
+
+nav a:hover {
+    color: rgb(196, 191, 191);
+}
+/* 
+FOOTER
+*/
+.container_footer {
+    background-color: rgba(48, 52, 63, 1);
+    display: flex;
+    justify-content:space-between;
+
+}
+.container_footer li{
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+.container_footer img{
+   height: 50px;
+   margin: 40px;
+}
+.container_footer p{
+    color: #FFF;
+   text-align: center;
+}
+/*
+Body
+*/
+.container_lazamientos{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    padding: 30px;
+}
+.container_sub_articulo img{
+    height: 300px;
+    width: 300px;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+}
+.precio,.categoria{
+   font-size: 20px;
+   color: rgb(53, 53, 53);
+}
+.cuotas{
+    color:rgb(20, 120, 187);
+    font-weight: bold;
+    font-size: 26px;
+}
+
+/*Seccion de  Novedades*/
+.container_articulos{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px; 
+}
+.articulo{
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+}
+.btn-shop{
+    background-color: #30343F;
+    color: white;
+    border: #30343F solid  10px;
+    border-radius: 10px;
+}
+.articulo2{
+    margin: 0 auto;
+    display: flex;
+    flex-direction:row-reverse;
+    
+}
+.linea_separador{
+    background-color: rgba(255, 51, 51, 1);
+    height: 3px;
+}
+
+.container_novedades{
+    display: flex;
+   background-size: cover;
+    background-image: url("/multimedia/funkos-banner.webp");
+    flex-direction: column;
+    padding: 30px;
+}
+.container_novedades a{
+    text-align: center;
+    width: 50px;
+    color: #FFF;
+}
+.sub_title{
+    color: #FFF;
+}
+.sub_descript{
+    color: #FFF;
+}
+
+
+
+
+
+
+
