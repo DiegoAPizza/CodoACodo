@@ -1,3 +1,11 @@
+* {
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
 /* 
 Header
 */
@@ -22,6 +30,7 @@ Header
 a {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
+    font-size: 35px;
 }
 
 nav a {
@@ -32,107 +41,234 @@ nav a {
 nav a:hover {
     color: rgb(196, 191, 191);
 }
+
 /* 
 FOOTER
 */
 .container_footer {
     background-color: rgba(48, 52, 63, 1);
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 
 }
-.container_footer li{
+
+.container_footer li {
     list-style: none;
     font-size: 20px;
     margin-bottom: 10px;
-    
+
 }
-.container_footer img{
-   height: 50px;
-   margin: 40px;
+
+.container_footer img {
+    height: 50px;
+    margin: 40px;
 }
-.container_footer p{
+
+.container_footer p {
     color: #FFF;
-   text-align: center;
+    text-align: center;
 }
+
 /*
 Body
 */
-.container_lazamientos{
+.container_lazamientos {
     display: flex;
-    justify-content:space-around;
-    align-items:center;
+    justify-content: space-around;
+    align-items: center;
     padding: 30px;
 }
-.container_sub_articulo img{
+
+.container_sub_articulo img {
     height: 300px;
     width: 300px;
 }
-.title{
-    font-size: 30px;
+
+.title {
+    font-size: 60px;
     text-align: center;
 }
-.precio,.categoria{
-   font-size: 20px;
-   color: rgb(53, 53, 53);
+
+.precio,
+.categoria {
+    font-size: 30px;
+    color: rgb(53, 53, 53);
 }
-.cuotas{
-    color:rgb(20, 120, 187);
+
+.cuotas {
+    color: rgb(20, 120, 187);
     font-weight: bold;
     font-size: 26px;
 }
 
 /*Seccion de  Novedades*/
-.container_articulos{
+.container_articulos {
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 30px; 
+    padding: 30px;
 }
-.articulo{
+
+.articulo {
     margin: 0 auto;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
-.btn-shop{
+
+.articulo_titulo {
+    font-size: 65px;
+}
+
+.articulo_sub {
+    font-size: 45px;
+}
+
+.btn-shop {
     background-color: #30343F;
+    text-align: center;
     color: white;
-    border: #30343F solid  10px;
-    border-radius: 10px;
+    width: 3em;
+    border: #30343F solid 25px;
+    border-radius: 40px;
 }
-.articulo2{
+
+.articulo2 {
     margin: 0 auto;
     display: flex;
-    flex-direction:row-reverse;
-    
+    flex-direction: row-reverse;
+
 }
-.linea_separador{
+
+.linea_separador {
     background-color: rgba(255, 51, 51, 1);
     height: 3px;
 }
 
-.container_novedades{
+.banner {
     display: flex;
-   background-size: cover;
+    background-color: #f01e1e;
+    margin-left: 18em;
+    color: white;
+    font-size: 15px;
+    height: 25px;
+    justify-content: right;
+    width: fit-content;
+
+}
+
+.container_novedades {
+    display: flex;
+    background-size: cover;
     background-image: url("/multimedia/funkos-banner.webp");
     flex-direction: column;
     padding: 30px;
 }
-.container_novedades a{
-    text-align: center;
+
+.container_novedades a {
+    color: #FFF;
+}
+
+.sub_title,
+.sub_descript {
+
+    color: #FFF;
+}
+
+.sub_title {
+    font-size: 70px;
+}
+
+.sub_descript {
+    font-size: 50px;
+}
+
+.a_sub {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.a_sub a:hover {
+    color: #686666;
+}
+
+.derechos {
+    margin: 10em 0 0 0;
+}
+
+
+
+
+/*
+
+SHOP
+*/
+.contenedor {
+
+    width: 90%;
+    margin: auto;
+    padding: 40px 0 0 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.contender_articulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 2;
+}
+
+.container_form {
+    display: grid;
+    grid-column-start: 1;
+}
+
+
+/*
+ITEMS
+*/
+
+.contenedor_Item_vender {
+    width: 90%;
+    margin: auto;
+    display: flex;
+
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-start: 1;
+
+}
+
+.imagen_contanier {
+    display: grid;
+    grid-column-start: 2;
+}
+
+.btn_masmenos {
     width: 50px;
+    height: fit-content;
+    background: rgba(79, 79, 79, 1);
     color: #FFF;
 }
-.sub_title{
+.agregar_carrito{
+    width: fit-content;
+    height: fit-content;
+    background: #f01e1e;
+    border: #f01e1e solid 3px;
     color: #FFF;
 }
-.sub_descript{
-    color: #FFF;
+
+.input_cantidad {
+    width: 5%;
+    margin: auto;
+    box-sizing: border-box;
 }
 
+.items_btns {
+    display: inline;
 
-
-
-
-
-
+}

@@ -1,74 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="" alt="">
-            <h2 class="nombre_empresa">FAS</h2>
-        </div>
-       <nav>
-        <a href="" class="nav-link">Shop</a>
-        <a href="" class="nav-link">Contacto</a>
-        <a href="" class="nav-link">Login</a>
-        <img src="" class="loguito" alt="">
-       </nav>
-       </header>
+    <div class="header">
+        <a href="#" class="logo">
+            <img src="multimedia\branding\logo_light_horizontal.svg" class="logo_img" alt="">
+        </a>
+        <nav class="nav-container">
+            <a href="shop.html" class="nav-link">Shop</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+            <a href="login.html" class="nav-link">Login</a>
+        </nav>
+    </div>
     <div class="contenedor">
-        <section class="Item_vender">
-            <img src="" alt="">
-            <h4>Star Wars</h4>
-            <h2 class="tietle">Baby Yoda BlueBall</h2>
-            <p class="descript">Figure Coleccionalbe de Baby Yoga    zxz </p>
-            <p class="product">Cantidad de precios:</p>
-            <p class="product">$ 1799,99.-</p>
+        <div class="contenedor_Item_vender">
+            <div class="items">
+                <h4 class="descript">Star Wars</h4>
+                <h2 class="item_title">Baby Yoda BlueBall</h2>
+                <p class="descript">Figure Coleccionalbe de Baby Yoga zxz </p>
+                <p class="product">Cantidad de precios:</p>
+                <p class="product">$ 1799,99.-</p>
+                <div class="items_btns">
+                    <button class="btn_masmenos">-</button>
+                    <input class="input_cantidad" type="text" min="0" max="100" name="" id="cantid" placeholder="  0">
+                    <button class="btn_masmenos">+</button>
+                    <button class="agregar_carrito">Agregar al carrito</button>
+                </div>
 
-            <button class="btn_masmenos">-</button>
-            <input class="input_cantidad" type="text" min="0" max="100" name="" id="cantid">
-            <button class="btn_masmenos">+</button>
-            <button class="agregar_carrito">Agregar al carrito</button>
-            <p class="cuotas">Ver metodos de pago-3 Cuotas sin interes </p>
-        </section>
-        <section class="container_Producs">
-            <h2>Productos Relacionados</h2>
-            <div class="sub_articulo">
-               <a href="shop.html"><img src="" alt=""></a> 
-                <h4>star wars</h4>
-                <h3>Stormtrooper Lightsaber</h3>
-                <p class="precio">$1799,99.-</p>
-                <p class="cuotas">3 coutas sin Interés</p>
+                <p class="cuotas">Ver metodos de pago-3 Cuotas sin interes </p>
             </div>
-            <div class="sub_articulo">
-                <a href="shop.html"><img src="" alt=""></a> 
-                <h4>Pokemon</h4>
-                <h3>Pidgeotto</h3>
-                <p class="precio">$1799,99.-</p>
-                <p class="cuotas">3 coutas sin Interés</p>
+            <div class="imagen_contanier">
+                <img src="/multimedia/star-wars/baby-yoda-1.webp" alt="">
             </div>
-            <div class="sub_articulo">
-                <a href="shop.html"><img src="" alt=""></a> 
-                <h4>Harry Potter</h4>
-                <h3>Luna lovegood lion mask</h3>
-                <p class="precio">$1799,99.-</p>
-                <p class="cuotas">3 coutas sin Interés</p>
-            </div>
-        </section>
 
-    <footer class="container_footer">
-        <ul>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="register.html">Registrarse</a></li>
-            <li><a href="login.html">Ingresar</a></li>
-            <li><a href="#Contacto">Contacto</a></li>
-        </ul>
-        <img src="" alt="">
-        <p>All Rigt reserved 2023- Funkoshop&copy:</p>
-       </footer>
-       </div>
+
+        </div>
+        <div class="container_lazamientos">
+            <div class="container_sub_articulo">
+                <div class="banner">
+                    <div class="nuevosIngresos">
+                        <h2>Nuevos</h2>
+                    </div>
+                </div>
+                <a href="item.html"><img src="/multimedia/star-wars/trooper-1.webp" alt=""></a>
+                <h4 class="categoria">Star Wars</h4>
+                <h3 class="subtitle">Stormtrooper Lightsaber</h3>
+                <p class="precio">$1799,99.-</p>
+                <p class="cuotas">3 coutas sin Interés</p>
+            </div>
+            <div class="container_sub_articulo">
+                <div class="banner">
+                    <div class="nuevosIngresos">
+                        <h2>Nuevos</h2>
+                    </div>
+                </div>
+                <a href="item.html"><img src="/multimedia/pokemon/pidgeotto-1.webp" alt=""></a>
+                <h4 class="categoria">Pokemon</h4>
+                <h3 class="subtitle">Pidgeotto</h3>
+                <p class="precio">$1799,99.-</p>
+                <p class="cuotas">3 coutas sin Interés</p>
+            </div>
+            <div class="container_sub_articulo">
+                <div class="banner">
+                    <div class="nuevosIngresos">
+                        <h2>Nuevos</h2>
+                    </div>
+                </div>
+                <a href="item.html"><img src="/multimedia/harry-potter/luna-1.webp" alt=""></a>
+                <h4 class="categoria">Harry Potter</h4>
+                <h3 class="subtitle">Luna lovegood lion mask</h3>
+                <p class="precio">$1799,99.-</p>
+                <p class="cuotas">3 coutas sin Interés</p>
+            </div>
+
+        </div>
+        <div class="container_footer">
+            <ul>
+                <li class="a_sub"><a href="shop.html">Shop</a></li>
+                <li class="a_sub"><a href="register.html">Registrarse</a></li>
+                <li class="a_sub"><a href="login.html">Ingresar</a></li>
+                <li class="a_sub"><a href="#contacto">Contacto</a></li>
+            </ul>
+            <p class="derechos">All Rigt reserved 2023- Funkoshop&copy</p>
+            <img src="/multimedia/branding/isotype.svg" alt="">
+        </div>
 </body>
+
 </html>

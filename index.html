@@ -7,30 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funkoshop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+    <div class="header">
+        <a href="#" class="logo">
+            <img src="multimedia\branding\logo_light_horizontal.svg" class="logo_img" alt="">
+        </a>
+        <nav class="nav-container">
+            <a href="shop.html" class="nav-link">Shop</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+            <a href="login.html" class="nav-link">Login</a>
+        </nav>
+    </div>
+    <div class="container_novedades">
+        <h3 class="sub_title">Nuevos Ingresos</h3>
+        <p class="sub_descript">Descubri el próximo Funko Pop de tu colección</p>
+        <a href="shop.html" class="btn-shop">Shop</a>
+    </div>
     <div class="container">
-        <div class="header">
-            <a href="#" class="logo">
-                <img src="multimedia\branding\logo_light_horizontal.svg" class="logo_img" alt="">
-            </a>
-            <nav class="nav-container">
-                <a href="shop.html" class="nav-link">Shop</a>
-                <a href="#contacto" class="nav-link">Contacto</a>
-                <a href="login.html" class="nav-link">Login</a>
-            </nav>
-        </div>
-        <div class="container_novedades">
-            <h3 class="sub_title">Nuevos Ingresos</h3>
-            <p class="sub_descript">Descubri el próximo Funko Pop de tu colección</p>
-            <a href="shop.html" class="btn-shop">Shop</a>
-        </div>
         <div class="container_articulos">
             <div class="articulo">
                 <div class="articulo_container">
-                    <h2 class="articulo_titulo"> StarWares & The Mandalorian</h2>
+                    <h2 class="articulo_titulo"> StarWars & The Mandalorian</h2>
                     <p class="articulo_sub">Disfruta de una saga que sigue agregando personaje a su colección</p>
                     <hr class="linea_separador">
                     <br>
@@ -62,21 +64,36 @@
         <h2 class="title">Ultimos Lazamientos</h2>
         <div class="container_lazamientos">
             <div class="container_sub_articulo">
-                <a href="shop.html"><img src="/multimedia/star-wars/trooper-1.webp" alt=""></a>
+                <div class="banner">
+                    <div class="nuevosIngresos">
+                        <h2>Nuevos</h2>
+                    </div>
+                </div>
+                <a href="item.html"><img src="/multimedia/star-wars/trooper-1.webp" alt=""></a>
                 <h4 class="categoria">Star Wars</h4>
                 <h3 class="subtitle">Stormtrooper Lightsaber</h3>
                 <p class="precio">$1799,99.-</p>
                 <p class="cuotas">3 coutas sin Interés</p>
             </div>
             <div class="container_sub_articulo">
-                <a href="shop.html"><img src="/multimedia/pokemon/pidgeotto-1.webp" alt=""></a>
+                <div class="banner">
+                    <div class="nuevosIngresos">
+                        <h2>Nuevos</h2>
+                    </div>
+                </div>
+                <a href="item.html"><img src="/multimedia/pokemon/pidgeotto-1.webp" alt=""></a>
                 <h4 class="categoria">Pokemon</h4>
                 <h3 class="subtitle">Pidgeotto</h3>
                 <p class="precio">$1799,99.-</p>
                 <p class="cuotas">3 coutas sin Interés</p>
             </div>
             <div class="container_sub_articulo">
-                <a href="shop.html"><img src="/multimedia/harry-potter/luna-1.webp" alt=""></a>
+                <div class="banner">
+                    <div class="nuevosIngresos">
+                        <h2>Nuevos</h2>
+                    </div>
+                </div>
+                <a href="item.html"><img src="/multimedia/harry-potter/luna-1.webp" alt=""></a>
                 <h4 class="categoria">Harry Potter</h4>
                 <h3 class="subtitle">Luna lovegood lion mask</h3>
                 <p class="precio">$1799,99.-</p>
@@ -85,12 +102,12 @@
         </div>
         <div class="container_footer">
             <ul>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="register.html">Registrarse</a></li>
-                <li><a href="login.html">Ingresar</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li class="a_sub"><a href="shop.html">Shop</a></li>
+                <li class="a_sub"><a href="register.html">Registrarse</a></li>
+                <li class="a_sub"><a href="login.html">Ingresar</a></li>
+                <li class="a_sub"><a href="#contacto">Contacto</a></li>
             </ul>
-            <p>All Rigt reserved 2023- Funkoshop&copy</p>
+            <p class="derechos">All Rigt reserved 2023- Funkoshop&copy</p>
             <img src="/multimedia/branding/isotype.svg" alt="">
         </div>
     </div>
