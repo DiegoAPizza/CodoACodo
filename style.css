@@ -160,7 +160,7 @@ Body
 .container_novedades {
     display: flex;
     background-size: cover;
-    background-image: url("/multimedia/funkos-banner.webp");
+    background-image: url("./multimedia/funkos-banner.webp");
     flex-direction: column;
     padding: 30px;
 }
@@ -186,7 +186,6 @@ Body
 .a_sub {
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
 
 .a_sub a:hover {
@@ -270,5 +269,4 @@ ITEMS
 
 .items_btns {
     display: inline;
-
 }

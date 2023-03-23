@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="header">
+    <div class="header">
         <div class="logo">
-            <img src="multimedia\branding\logo_light_horizontal.svg" class="logo" alt="">
-            <h2 class="nombre_empresa">Funkoshop</h2>
+            <a href="index.html" class="logo">
+                <img src="./multimedia\branding\logo_light_horizontal.svg" class="logo_img" alt="">
+            </a>
         </div>
         <nav>
             <a href="salir.html" class="nav-link">Login</a>
         </nav>
-    </header>
-    <form action="/register" method="post">
+    </div>
+    <div class="container">
         <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
-            <label for="apellido">Apellido</label>
-            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
-            <label for="correo">Correo</label>
-            <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo">
-            <label for="password">Contraseña</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
-            <label for="password2">Repetir contraseña</label>
-            <input type="password" class="form-control" id="password2" name="password2" placeholder="Repetir contraseña">
-            <button class="btn btn-primary" type="submit">Registrarse</button>
-            <button class="btn_registrar">Registrar</button>
-            <input type="checkbox" name="aceptar" id="terminos"> Acepto <p class="terminos_condiciones">Términos y Condiciones</p>
+            <form action="/register" method="post">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                <label for="correo">Correo</label>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
+                <label for="password2">Repetir contraseña</label>
+                <input type="password" class="form-control" id="password2" name="password2"
+                    placeholder="Repetir contraseña">
+                <button class="btn btn-primary" type="submit">Registrarse</button>
+                <button class="btn_registrar">Registrar</button>
+                <input type="checkbox" name="aceptar" id="terminos"> Acepto <p class="terminos_condiciones">Términos y
+                    Condiciones</p>
+            </form>
         </div>
-    </form>
-    <footer class="container_footer">
-        <ul>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="register.html">Registrarse</a></li>
-            <li><a href="login.html">Ingresar</a></li>
-            <li><a href="#Contacto">Contacto</a></li>
-        </ul>
-        <img src="" alt="">
-        <p>All Rigt reserved 2023- Funkoshop&copy:</p>
-       </footer>
+
+        <div class="container_footer">
+            <ul>
+                <li class="a_sub"><a href="shop.html">Shop</a></li>
+                <li class="a_sub"><a href="register.html">Registrarse</a></li>
+                <li class="a_sub"><a href="login.html">Ingresar</a></li>
+                <li class="a_sub"><a href="#contacto">Contacto</a></li>
+            </ul>
+            <p class="derechos">All Rigt reserved 2023- Funkoshop&copy</p>
+            <img src="./multimedia/branding/isotype.svg" alt="">
+        </div>
+    </div>
+
+
 </body>
+
 </html>
