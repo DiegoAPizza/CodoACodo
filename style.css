@@ -221,8 +221,13 @@ SHOP
 .container_form {
     display: grid;
     grid-column-start: 1;
-}
 
+}
+.container_form__precio h6,#input_number{
+    display: inline;
+    width: 30px;
+}
+.container_form__search{}
 
 /*
 ITEMS

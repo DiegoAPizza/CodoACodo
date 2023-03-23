@@ -12,7 +12,7 @@
 <body>
     <div class="header">
         <a href="index.html" class="logo">
-            <img src="multimedia\branding\logo_light_horizontal.svg" class="logo_img" alt="">
+            <img src="./multimedia\branding\logo_light_horizontal.svg" class="logo_img" alt="">
         </a>
         <nav class="nav-container">
             <a href="shop.html" class="nav-link">Shop</a>
@@ -21,26 +21,33 @@
         </nav>
     </div>
     <div class="contenedor">
-
         <div class="container_form">
-            <form action="" method="post"></form>
-            <label for="text">Buscar</label>
-            <input type="text" name="" id="">
-            <label for="text">Ordernar por;</label>
-            <select name="cant_produc" id="cant_product">
-                <option value="">Mayor a menor</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-            </select>
-            <label for="text">Precio</label>
-            <input class="input_cantidad" type="text" min="0" max="100" name="" id="cantid" placeholder="0">-
-            <label for="text">max</label>
-            <input class="input_cantidad" type="text" min="0." max="100" name="" id="cantid" placeholder="0">
-            <label for="text">Filtra</label>
-            <input type="checkbox" name="input_check" id="nuevo">nuevo
-            <input type="checkbox" name="input_check" id="ofertas">ofertas
-            <input type="checkbox" name="input_check" id="edicion_especial">edicion especial
-            <input type="checkbox" name="input_check" id="favoritos">favoritos
+            <form action="shop.html" method="post">
+                <div class="container_form__search">
+                    <h2>Buscar</h2>
+                    <input type="text" name="input_search" id="input_search" placeholder="Item o Categoria">
+                    <h2>Ordernar Por</h2>
+                    <select name="select_Ord" id="select_Ord"><img src="./multimedia/icons/search_icon.svg" alt="">
+                        <option value="">Mayor o Menor</option>
+                        <option value="asc">Ascendente</option>
+                        <option value="desc">Descendente</option>
+                    </select>
+                </div>
+                <div class="container_form__precio">
+                    <h2>Precio</h2>
+                    <h6>MIN</h6>
+                    <input type="text" class="input_numb" name="input_number" id="input_number" placeholder="0">
+                    - <h6>MAX</h6>
+                    <input type="text" class="input_numb" name="input_number" id="input_number" placeholder="0">
+                </div>
+                <div class="conatiner_form__filtrar">
+                    <h2>Filtrar</h2>
+                    <input type="checkbox" name="checkbox_filter" id="checkbox_filter" value="">
+                    <input type="checkbox" name="checkbox_filter" id="checkbox_filter" value="">
+                    <input type="checkbox" name="checkbox_filter" id="checkbox_filter" value="">
+                    <input type="checkbox" name="checkbox_filter" id="checkbox_filter" value="">
+
+                </div>
             </form>
         </div>
 
