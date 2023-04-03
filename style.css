@@ -16,6 +16,9 @@ Header
     height: 70px;
     align-items: center;
 }
+.arrow-flech{
+    background: url(./multimedia/icons/arrow.svg);
+}
 
 .logo {
     display: flex;
@@ -153,7 +156,7 @@ Body
     font-size: 15px;
     height: 25px;
     justify-content: right;
-    width: fit-content;
+    width:max-content;
 
 }
 
@@ -227,7 +230,6 @@ SHOP
     display: inline;
     width: 30px;
 }
-.container_form__search{}
 
 /*
 ITEMS
